@@ -1,0 +1,1 @@
+# streamlit-partial-derivatives-economy
