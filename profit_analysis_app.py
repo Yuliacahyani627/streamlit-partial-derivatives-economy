@@ -20,9 +20,9 @@ df_dx = sp.diff(f, x)
 df_dy = sp.diff(f, y)
 
 # --- Evaluasi nilai turunan di titik (x0, y0) ---
-df_dx_val = df_dx.evalf(subs={x: x0, y: y0})
-df_dy_val = df_dy.evalf(subs={x: x0, y: y0})
-f_val = f.evalf(subs={x: x0, y: y0})
+df_dx_val = float(df_dx.evalf(subs={x: x0, y: y0}))
+df_dy_val = float(df_dy.evalf(subs={x: x0, y: y0}))
+f_val = float(f.evalf(subs={x: x0, y: y0}))
 
 st.write(f"**Turunan Parsial ∂f/∂x:** {df_dx} → nilai di titik: {df_dx_val}")
 st.write(f"**Turunan Parsial ∂f/∂y:** {df_dy} → nilai di titik: {df_dy_val}")
